@@ -114,7 +114,7 @@ class InnerProductDecoder(Layer):
     def _call(self, inputs):
         inputs = tf.nn.dropout(inputs, 1 - self.dropout)
         x = tf.transpose(inputs)
-        x = tf.matmul(inputs, x)
+        x = tf.matmul(inputs, x)    # X*X'
         x = tf.reshape(x, [-1])
         outputs = self.act(x)
         return outputs

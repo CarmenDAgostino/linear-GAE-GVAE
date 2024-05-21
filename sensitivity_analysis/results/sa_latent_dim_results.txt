@@ -1,0 +1,944 @@
+TASK: link_prediction
+
+DATASET: cora
+MODEL: gcn_ae
+Latent dimension: 16
+AUC scores: 0.8543004151529008
+AP scores: 0.8897819780856517
+Total running times: 43.293792724609375
+
+Latent dimension: 32
+AUC scores: 0.8406936258006906
+AP scores: 0.8769750648066357
+Total running times: 42.13629174232483
+
+Latent dimension: 64
+AUC scores: 0.8454572622952591
+AP scores: 0.8820973470951683
+Total running times: 43.451164960861206
+
+Latent dimension: 128
+AUC scores: 0.8385836552898689
+AP scores: 0.8747570516970485
+Total running times: 45.644198417663574
+
+MODEL: gcn_vae
+Latent dimension: 16
+AUC scores: 0.844895563660979
+AP scores: 0.8827427952903812
+Total running times: 45.56380558013916
+
+Latent dimension: 32
+AUC scores: 0.8558522876617134
+AP scores: 0.8899022514443214
+Total running times: 45.635427951812744
+
+Latent dimension: 64
+AUC scores: 0.8670466533923357
+AP scores: 0.8975581756088264
+Total running times: 46.68770408630371
+
+Latent dimension: 128
+AUC scores: 0.8633452034177201
+AP scores: 0.9028692233165578
+Total running times: 49.784980058670044
+
+MODEL: linear_ae
+Latent dimension: 16
+AUC scores: 0.8194534960339035
+AP scores: 0.867154903022828
+Total running times: 42.172072410583496
+
+Latent dimension: 32
+AUC scores: 0.8366501157603274
+AP scores: 0.880940534879411
+Total running times: 41.519665002822876
+
+Latent dimension: 64
+AUC scores: 0.8155252062262134
+AP scores: 0.8761914673253163
+Total running times: 42.322537422180176
+
+Latent dimension: 128
+AUC scores: 0.822470825877024
+AP scores: 0.8787713480989477
+Total running times: 44.99311661720276
+
+MODEL: linear_vae
+Latent dimension: 16
+AUC scores: 0.8324085709450579
+AP scores: 0.8696078070913117
+Total running times: 44.61760878562927
+
+Latent dimension: 32
+AUC scores: 0.8335427701104314
+AP scores: 0.8696893461829496
+Total running times: 44.31112575531006
+
+Latent dimension: 64
+AUC scores: 0.8803509896337796
+AP scores: 0.9134624838782955
+Total running times: 45.61738204956055
+
+Latent dimension: 128
+AUC scores: 0.8685985259011483
+AP scores: 0.9057439709278041
+Total running times: 49.30270028114319
+
+DATASET: citeseer
+MODEL: gcn_ae
+Latent dimension: 16
+AUC scores: 0.7911315058567805
+AP scores: 0.8447774023331882
+Total running times: 63.97176456451416
+
+Latent dimension: 32
+AUC scores: 0.7738533993479049
+AP scores: 0.8234641171437371
+Total running times: 67.42276787757874
+
+Latent dimension: 64
+AUC scores: 0.785970293442821
+AP scores: 0.833083229315347
+Total running times: 71.63071155548096
+
+Latent dimension: 128
+AUC scores: 0.8023451274000725
+AP scores: 0.8327604828720471
+Total running times: 78.00842022895813
+
+MODEL: gcn_vae
+Latent dimension: 16
+AUC scores: 0.7823596184035745
+AP scores: 0.8398168057412803
+Total running times: 73.59292888641357
+
+Latent dimension: 32
+AUC scores: 0.7789252505736023
+AP scores: 0.826086863323701
+Total running times: 72.94568920135498
+
+Latent dimension: 64
+AUC scores: 0.7540055548846758
+AP scores: 0.8202428559007986
+Total running times: 76.79579663276672
+
+Latent dimension: 128
+AUC scores: 0.7656031880207705
+AP scores: 0.8244792786781557
+Total running times: 84.54238224029541
+
+MODEL: linear_ae
+Latent dimension: 16
+AUC scores: 0.7388962685665982
+AP scores: 0.8038104598488792
+Total running times: 68.28430342674255
+
+Latent dimension: 32
+AUC scores: 0.7686221470836855
+AP scores: 0.8329880775132722
+Total running times: 67.39276671409607
+
+Latent dimension: 64
+AUC scores: 0.7759642555246952
+AP scores: 0.8403548398731828
+Total running times: 70.04868841171265
+
+Latent dimension: 128
+AUC scores: 0.7866731071126675
+AP scores: 0.8436994591393319
+Total running times: 76.63392162322998
+
+MODEL: linear_vae
+Latent dimension: 16
+AUC scores: 0.7852771404419756
+AP scores: 0.8330106372666191
+Total running times: 72.50685548782349
+
+Latent dimension: 32
+AUC scores: 0.7724815843497163
+AP scores: 0.827163871253795
+Total running times: 71.63745021820068
+
+Latent dimension: 64
+AUC scores: 0.7806303586523368
+AP scores: 0.8297900973502831
+Total running times: 74.75967240333557
+
+Latent dimension: 128
+AUC scores: 0.8016712957372298
+AP scores: 0.839380573513244
+Total running times: 82.66652703285217
+
+TASK: node_clustering
+
+DATASET: cora
+MODEL: gcn_ae
+Latent dimension: 16
+AMI scores: 0.2745714329863174
+Total running times: 47.893470287323
+
+Latent dimension: 32
+AMI scores: 0.29076154902020895
+Total running times: 46.753089904785156
+
+Latent dimension: 64
+AMI scores: 0.3377933291550746
+Total running times: 49.18807673454285
+
+Latent dimension: 128
+AMI scores: 0.30643500192209266
+Total running times: 52.31497311592102
+
+MODEL: gcn_vae
+Latent dimension: 16
+AMI scores: 0.2788598211636845
+Total running times: 50.61670517921448
+
+Latent dimension: 32
+AMI scores: 0.31747565303283953
+Total running times: 50.469168186187744
+
+Latent dimension: 64
+AMI scores: 0.3420602524139306
+Total running times: 52.56140756607056
+
+Latent dimension: 128
+AMI scores: 0.34576334887529975
+Total running times: 57.25965237617493
+
+MODEL: linear_ae
+Latent dimension: 16
+AMI scores: 0.2542352752064786
+Total running times: 47.46782398223877
+
+Latent dimension: 32
+AMI scores: 0.27678922519471094
+Total running times: 45.615774393081665
+
+Latent dimension: 64
+AMI scores: 0.2150437465313018
+Total running times: 47.29950785636902
+
+Latent dimension: 128
+AMI scores: 0.25509922288310094
+Total running times: 51.277530670166016
+
+MODEL: linear_vae
+Latent dimension: 16
+AMI scores: 0.3233182090318622
+Total running times: 49.681854009628296
+
+Latent dimension: 32
+AMI scores: 0.3631693608362217
+Total running times: 48.705113887786865
+
+Latent dimension: 64
+AMI scores: 0.37431049423399376
+Total running times: 51.448583126068115
+
+Latent dimension: 128
+AMI scores: 0.4341565689906014
+Total running times: 57.4389750957489
+
+DATASET: citeseer
+MODEL: gcn_ae
+Latent dimension: 16
+AMI scores: 0.09310302559044159
+Total running times: 71.18581080436707
+
+Latent dimension: 32
+AMI scores: 0.07999028809500065
+Total running times: 70.10169243812561
+
+Latent dimension: 64
+AMI scores: 0.08032038347229059
+Total running times: 72.55956959724426
+
+Latent dimension: 128
+AMI scores: 0.07146372633327891
+Total running times: 79.08378982543945
+
+MODEL: gcn_vae
+Latent dimension: 16
+AMI scores: 0.07404006859150042
+Total running times: 76.00696778297424
+
+Latent dimension: 32
+AMI scores: 0.09544882769383262
+Total running times: 74.76087522506714
+
+Latent dimension: 64
+AMI scores: 0.11634332133501561
+Total running times: 78.88079571723938
+
+Latent dimension: 128
+AMI scores: 0.12788903090891324
+Total running times: 85.85208702087402
+
+MODEL: linear_ae
+Latent dimension: 16
+AMI scores: 0.06829600097909472
+Total running times: 9084.921578884125
+
+Latent dimension: 32
+AMI scores: 0.11033854815617913
+Total running times: 60.54567217826843
+
+Latent dimension: 64
+AMI scores: 0.1292311169804786
+Total running times: 65.81676197052002
+
+Latent dimension: 128
+AMI scores: 0.097190666640693
+Total running times: 72.24219989776611
+
+MODEL: linear_vae
+Latent dimension: 16
+AMI scores: 0.14291932336663338
+Total running times: 69.9520857334137
+
+Latent dimension: 32
+AMI scores: 0.14655838809022356
+Total running times: 68.95075559616089
+
+Latent dimension: 64
+AMI scores: 0.16073807218206115
+Total running times: 70.73184537887573
+
+Latent dimension: 128
+AMI scores: 0.18300947649705618
+Total running times: 91.42033290863037
+
+TASK: link_prediction
+
+DATASET: pubmed
+MODEL: gcn_ae
+Latent dimension: 16
+AUC scores: 0.8468793425969972
+AP scores: 0.8630673482829663
+Total running times: 533.1041867733002
+
+Latent dimension: 32
+AUC scores: 0.8521345213348278
+AP scores: 0.869231363490671
+Total running times: 484.0377998352051
+
+Latent dimension: 64
+AUC scores: 0.8471182363415396
+AP scores: 0.8626424667060217
+Total running times: 542.9408061504364
+
+Latent dimension: 128
+AUC scores: 0.857138715275515
+AP scores: 0.8744574901117343
+Total running times: 600.1963069438934
+
+MODEL: gcn_vae
+Latent dimension: 16
+AUC scores: 0.8340635141211277
+AP scores: 0.8528971453671745
+Total running times: 547.6384224891663
+
+Latent dimension: 32
+AUC scores: 0.8464620867354586
+AP scores: 0.8652205550411086
+Total running times: 553.0920078754425
+
+Latent dimension: 64
+AUC scores: 0.8403478832563307
+AP scores: 0.8580310871767883
+Total running times: 581.373125076294
+
+Latent dimension: 128
+AUC scores: 0.8341782900288678
+AP scores: 0.8551062907019179
+Total running times: 597.923800945282
+
+MODEL: linear_ae
+Latent dimension: 16
+AUC scores: 0.8258220999393973
+AP scores: 0.8490048910233594
+Total running times: 486.3864395618439
+
+Latent dimension: 32
+AUC scores: 0.8396301329191049
+AP scores: 0.8665874761804316
+Total running times: 486.8537862300873
+
+Latent dimension: 64
+AUC scores: 0.830361946550522
+AP scores: 0.8634769163458177
+Total running times: 500.67603373527527
+
+Latent dimension: 128
+AUC scores: 0.83289192930639
+AP scores: 0.8676560381294631
+Total running times: 554.432018995285
+
+MODEL: linear_vae
+Latent dimension: 16
+AUC scores: 0.8442784935454652
+AP scores: 0.8600351787647036
+Total running times: 514.9784297943115
+
+Latent dimension: 32
+AUC scores: 0.8540029835117753
+AP scores: 0.8741333293460712
+Total running times: 527.1175167560577
+
+Latent dimension: 64
+AUC scores: 0.8626870065832345
+AP scores: 0.8830468367170158
+Total running times: 535.2437255382538
+
+Latent dimension: 128
+AUC scores: 0.8690018706258389
+AP scores: 0.8873949840557195
+Total running times: 578.7294857501984
+
+TASK: node_clustering
+
+DATASET: pubmed
+MODEL: gcn_ae
+Latent dimension: 16
+AMI scores: 0.19945746762318356
+Total running times: 618.9731781482697
+
+Latent dimension: 32
+AMI scores: 0.2229600615218099
+Total running times: 620.2129845619202
+
+Latent dimension: 64
+AMI scores: 0.2174058996906953
+Total running times: 643.1073973178864
+
+Latent dimension: 128
+AMI scores: 0.20517397116119757
+Total running times: 721.1601052284241
+
+MODEL: gcn_vae
+Latent dimension: 16
+AMI scores: 0.2688803186643077
+Total running times: 660.9554753303528
+
+Latent dimension: 32
+AMI scores: 0.2731952825668226
+Total running times: 667.9790499210358
+
+Latent dimension: 64
+AMI scores: 0.26334807022644047
+Total running times: 695.394008398056
+
+Latent dimension: 128
+AMI scores: 0.26721539295852026
+Total running times: 745.0119407176971
+
+MODEL: linear_ae
+Latent dimension: 16
+AMI scores: 0.1918721305262532
+Total running times: 616.0503849983215
+
+Latent dimension: 32
+AMI scores: 0.12512837169980814
+Total running times: 631.2475779056549
+
+Latent dimension: 64
+AMI scores: 0.10767438482274887
+Total running times: 645.7861585617065
+
+Latent dimension: 128
+AMI scores: 0.09047973587886812
+Total running times: 752.3318285942078
+
+MODEL: linear_vae
+Latent dimension: 16
+AMI scores: 0.282407215525394
+Total running times: 663.4320294857025
+
+Latent dimension: 32
+AMI scores: 0.28494315410244714
+Total running times: 655.1660583019257
+
+Latent dimension: 64
+AMI scores: 0.28593894901423833
+Total running times: 685.2961943149567
+
+Latent dimension: 128
+AMI scores: 0.27512119408081165
+Total running times: 736.8433907032013
+
+WITH FEATURES
+
+TASK: link_prediction
+
+DATASET: cora
+MODEL: gcn_ae
+Latent dimension: 16
+AUC scores: 0.8933672752935415
+AP scores: 0.9104351091149357
+Total running times: 23.364845514297485
+
+Latent dimension: 32
+AUC scores: 0.8588264099175815
+AP scores: 0.8850133650365596
+Total running times: 23.71021866798401
+
+Latent dimension: 64
+AUC scores: 0.8638294884581732
+AP scores: 0.874587041424415
+Total running times: 24.96360206604004
+
+Latent dimension: 128
+AUC scores: 0.7584533844143031
+AP scores: 0.7494230300823892
+Total running times: 28.63697862625122
+
+MODEL: gcn_vae
+Latent dimension: 16
+AUC scores: 0.8853846735486752
+AP scores: 0.8960300844914388
+Total running times: 27.13118028640747
+
+Latent dimension: 32
+AUC scores: 0.8845583284424745
+AP scores: 0.9057055053677006
+Total running times: 25.04663634300232
+
+Latent dimension: 64
+AUC scores: 0.9001184608017168
+AP scores: 0.9128751568743466
+Total running times: 25.937106370925903
+
+Latent dimension: 128
+AUC scores: 0.8764407029874445
+AP scores: 0.8887439667003796
+Total running times: 29.46539306640625
+
+MODEL: linear_ae
+Latent dimension: 16
+AUC scores: 0.8830046556175266
+AP scores: 0.9079975857095721
+Total running times: 28.844552040100098
+
+Latent dimension: 32
+AUC scores: 0.8625872703246691
+AP scores: 0.8881801089185744
+Total running times: 23.605409622192383
+
+Latent dimension: 64
+AUC scores: 0.8634838277601548
+AP scores: 0.9028329618683917
+Total running times: 23.51070237159729
+
+Latent dimension: 128
+AUC scores: 0.8612154294294079
+AP scores: 0.8918546989458562
+Total running times: 25.166189670562744
+
+MODEL: linear_vae
+Latent dimension: 16
+AUC scores: 0.8825869822740874
+AP scores: 0.8866700897500532
+Total running times: 30.714117527008057
+
+Latent dimension: 32
+AUC scores: 0.9033536288972344
+AP scores: 0.9257064957018922
+Total running times: 23.9549343585968
+
+Latent dimension: 64
+AUC scores: 0.8726330343608336
+AP scores: 0.8967175488722585
+Total running times: 25.472487926483154
+
+Latent dimension: 128
+AUC scores: 0.8655919979548408
+AP scores: 0.8965359112641132
+Total running times: 27.85039210319519
+
+DATASET: citeseer
+MODEL: gcn_ae
+Latent dimension: 16
+AUC scores: 0.8321869339451757
+AP scores: 0.8528395335006664
+Total running times: 15.985715866088867
+
+Latent dimension: 32
+AUC scores: 0.8071368192247312
+AP scores: 0.8189633617700891
+Total running times: 13.192456245422363
+
+Latent dimension: 64
+AUC scores: 0.8356816809564063
+AP scores: 0.8548909407986991
+Total running times: 13.648275375366211
+
+Latent dimension: 128
+AUC scores: 0.5
+AP scores: 0.5
+Total running times: 16.39753484725952
+
+MODEL: gcn_vae
+Latent dimension: 16
+AUC scores: 0.8095254196353097
+AP scores: 0.8438787562335052
+Total running times: 15.67688798904419
+
+Latent dimension: 32
+AUC scores: 0.7786523366743148
+AP scores: 0.8237611803993141
+Total running times: 15.014219760894775
+
+Latent dimension: 64
+AUC scores: 0.7795942519019443
+AP scores: 0.8294445655709608
+Total running times: 15.770823001861572
+
+Latent dimension: 128
+AUC scores: 0.7947397657287767
+AP scores: 0.8363913803198311
+Total running times: 16.246148824691772
+
+MODEL: linear_ae
+Latent dimension: 16
+AUC scores: 0.7926458157227388
+AP scores: 0.8270902736630403
+Total running times: 20.378734827041626
+
+Latent dimension: 32
+AUC scores: 0.8151648351648351
+AP scores: 0.8568554751717923
+Total running times: 13.442094326019287
+
+Latent dimension: 64
+AUC scores: 0.7759159521796883
+AP scores: 0.8210761400919264
+Total running times: 14.320560216903687
+
+Latent dimension: 128
+AUC scores: 0.7726699673952422
+AP scores: 0.823420058005757
+Total running times: 15.967349767684937
+
+MODEL: linear_vae
+Latent dimension: 16
+AUC scores: 0.8021688201907982
+AP scores: 0.8392992031642997
+Total running times: 20.552736520767212
+
+Latent dimension: 32
+AUC scores: 0.7860693153000846
+AP scores: 0.8155218826316463
+Total running times: 14.376703977584839
+
+Latent dimension: 64
+AUC scores: 0.7865088757396449
+AP scores: 0.833014771711052
+Total running times: 14.473585367202759
+
+Latent dimension: 128
+AUC scores: 0.7598647506339815
+AP scores: 0.8063840167147105
+Total running times: 18.487110137939453
+
+TASK: node_clustering
+
+DATASET: cora
+MODEL: gcn_ae
+Latent dimension: 16
+AMI scores: 0.3554457035433376
+Total running times: 32.45113563537598
+
+Latent dimension: 32
+AMI scores: 0.4281356511716991
+Total running times: 30.829684019088745
+
+Latent dimension: 64
+AMI scores: 0.4050800011917226
+Total running times: 31.73206877708435
+
+Latent dimension: 128
+AMI scores: 0.3631321119699035
+Total running times: 33.43912100791931
+
+MODEL: gcn_vae
+Latent dimension: 16
+AMI scores: 0.4293281131188281
+Total running times: 32.57100057601929
+
+Latent dimension: 32
+AMI scores: 0.40319130750695237
+Total running times: 30.829331159591675
+
+Latent dimension: 64
+AMI scores: 0.4609303045944733
+Total running times: 31.634407997131348
+
+Latent dimension: 128
+AMI scores: 0.4241218873288037
+Total running times: 34.59484839439392
+
+MODEL: linear_ae
+Latent dimension: 16
+AMI scores: 0.4402025196902565
+Total running times: 37.31352114677429
+
+Latent dimension: 32
+AMI scores: 0.3719524798833378
+Total running times: 28.88052248954773
+
+Latent dimension: 64
+AMI scores: 0.36909739350487386
+Total running times: 30.220255851745605
+
+Latent dimension: 128
+AMI scores: 0.19494734969344835
+Total running times: 33.50013589859009
+
+MODEL: linear_vae
+Latent dimension: 16
+AMI scores: 0.44433887668226973
+Total running times: 39.371695041656494
+
+Latent dimension: 32
+AMI scores: 0.32416818121039764
+Total running times: 29.930898427963257
+
+Latent dimension: 64
+AMI scores: 0.34418953897769416
+Total running times: 31.14846181869507
+
+Latent dimension: 128
+AMI scores: 0.28433432316704327
+Total running times: 35.795016288757324
+
+DATASET: citeseer
+MODEL: gcn_ae
+Latent dimension: 16
+AMI scores: 0.1838946733733321
+Total running times: 21.93843698501587
+
+Latent dimension: 32
+AMI scores: 0.19872565470068013
+Total running times: 19.773693799972534
+
+Latent dimension: 64
+AMI scores: 0.18649656898059738
+Total running times: 20.190003871917725
+
+Latent dimension: 128
+AMI scores: 0.09152481843336482
+Total running times: 21.704339265823364
+
+MODEL: gcn_vae
+Latent dimension: 16
+AMI scores: 0.15339985491979247
+Total running times: 21.629268884658813
+
+Latent dimension: 32
+AMI scores: 0.15268687074680617
+Total running times: 19.86365270614624
+
+Latent dimension: 64
+AMI scores: 0.13276441778402145
+Total running times: 20.96809434890747
+
+Latent dimension: 128
+AMI scores: 0.16622229605855243
+Total running times: 23.216402530670166
+
+MODEL: linear_ae
+Latent dimension: 16
+AMI scores: 0.1894077167538697
+Total running times: 27.751870155334473
+
+Latent dimension: 32
+AMI scores: 0.1083563264478618
+Total running times: 18.744852542877197
+
+Latent dimension: 64
+AMI scores: 0.06239742682257314
+Total running times: 19.803184747695923
+
+Latent dimension: 128
+AMI scores: 0.05123013371671857
+Total running times: 22.225558519363403
+
+MODEL: linear_vae
+Latent dimension: 16
+AMI scores: 0.1778943986394232
+Total running times: 28.796079635620117
+
+Latent dimension: 32
+AMI scores: 0.10736948159535938
+Total running times: 19.494027376174927
+
+Latent dimension: 64
+AMI scores: 0.09586484057530888
+Total running times: 20.42016911506653
+
+Latent dimension: 128
+AMI scores: 0.08228643709872488
+Total running times: 24.056023120880127
+
+
+
+TASK: link_prediction
+
+DATASET: pubmed
+MODEL: gcn_ae
+Latent dimension: 16
+AUC scores: 0.8491894972891605
+AP scores: 0.8590528687222101
+Total running times: 508.483811378479
+
+Latent dimension: 32
+AUC scores: 0.8545817758360593
+AP scores: 0.8633649198760586
+Total running times: 518.9903366565704
+
+Latent dimension: 64
+AUC scores: 0.8510690832345006
+AP scores: 0.8587416757039574
+Total running times: 601.6777586936951
+
+Latent dimension: 128
+AUC scores: 0.8625471067409323
+AP scores: 0.8702783224227739
+Total running times: 625.0718019008636
+
+MODEL: gcn_vae
+Latent dimension: 16
+AUC scores: 0.8349359535670998
+AP scores: 0.8416936045513401
+Total running times: 653.0284533500671
+
+Latent dimension: 32
+AUC scores: 0.8245374956014024
+AP scores: 0.8320064412175705
+Total running times: 734.4214489459991
+
+Latent dimension: 64
+AUC scores: 0.8366078534110309
+AP scores: 0.8465406894398372
+Total running times: 762.4605093002319
+
+Latent dimension: 128
+AUC scores: 0.8254404299547758
+AP scores: 0.8278080875760023
+Total running times: 659.5114135742188
+
+MODEL: linear_ae
+Latent dimension: 16
+AUC scores: 0.8375698684656387
+AP scores: 0.8375139565656984
+Total running times: 558.6386497020721
+
+Latent dimension: 32
+AUC scores: 0.8422159127008693
+AP scores: 0.8450829341944525
+Total running times: 519.8155493736267
+
+Latent dimension: 64
+AUC scores: 0.8619420450139451
+AP scores: 0.8644376273732237
+Total running times: 549.4414420127869
+
+Latent dimension: 128
+AUC scores: 0.8650896387366576
+AP scores: 0.8691294901940649
+Total running times: 573.9097230434418
+
+MODEL: linear_vae
+Latent dimension: 16
+AUC scores: 0.8352879686542897
+AP scores: 0.8272282145757283
+Total running times: 614.1985142230988
+
+Latent dimension: 32
+AUC scores: 0.8454765259468389
+AP scores: 0.845101540627681
+Total running times: 556.9750592708588
+
+Latent dimension: 64
+AUC scores: 0.8544688072224974
+AP scores: 0.8550172203092872
+Total running times: 578.4426801204681
+
+Latent dimension: 128
+AUC scores: 0.8651753961181561
+AP scores: 0.8651659614226026
+Total running times: 633.522064447403
+
+TASK: node_clustering
+
+DATASET: pubmed
+MODEL: gcn_ae
+Latent dimension: 16
+AMI scores: 0.26710966501479033
+Total running times: 1474.2389283180237
+
+Latent dimension: 32
+AMI scores: 0.2932330455178576
+Total running times: 1183.8649654388428
+
+Latent dimension: 64
+AMI scores: 0.24489007039546276
+Total running times: 1233.4891860485077
+
+Latent dimension: 128
+AMI scores: 0.30905533462927254
+Total running times: 1192.5482456684113
+
+MODEL: gcn_vae
+Latent dimension: 16
+AMI scores: 0.22814435671700728
+Total running times: 1270.9546103477478
+
+Latent dimension: 32
+AMI scores: 0.22391027739022473
+Total running times: 1164.5777623653412
+
+Latent dimension: 64
+AMI scores: 0.2284307342402315
+Total running times: 1274.2272062301636
+
+Latent dimension: 128
+AMI scores: 0.20842594098137945
+Total running times: 1219.358909368515
+
+MODEL: linear_ae
+Latent dimension: 16
+AMI scores: 0.21143205013155536
+Total running times: 1046.9692022800446
+
+Latent dimension: 32
+AMI scores: 0.3086975652873677
+Total running times: 1080.559119462967
+
+Latent dimension: 64
+AMI scores: 0.1890743464122302
+Total running times: 1073.0497267246246
+
+Latent dimension: 128
+AMI scores: 0.1840487832711345
+Total running times: 1124.5183622837067
+
+MODEL: linear_vae
+Latent dimension: 16
+AMI scores: 0.2976959375407635
+Total running times: 1225.7394802570343
+
+Latent dimension: 32
+AMI scores: 0.2843485821768357
+Total running times: 1194.9047939777374
+
+Latent dimension: 64
+AMI scores: 0.27788922118487697
+Total running times: 1287.4955818653107
+
+Latent dimension: 128
+AMI scores: 0.28311103169137003
+Total running times: 1334.181939125061
+

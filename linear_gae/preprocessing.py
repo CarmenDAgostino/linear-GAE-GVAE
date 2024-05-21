@@ -12,6 +12,9 @@ mask_test_edges function is borrowed from philipjackson's mask_test_edges
 pull request on this same repository.
 """
 
+
+'''Converte una matrice sparsa in formato COO in tuple di coordinate,
+   valori e forma, adatte per la creazione di tensori sparsi in TensorFlow.'''
 def sparse_to_tuple(sparse_mx):
     if not sp.isspmatrix_coo(sparse_mx):
         sparse_mx = sparse_mx.tocoo()
@@ -20,11 +23,14 @@ def sparse_to_tuple(sparse_mx):
     shape = sparse_mx.shape
     return coords, values, shape
 
+
+'''Normalizza una matrice di adiacenza del grafo, aggiunge self-loops, 
+   calcola la normalizzazione simmetrica e la converte in tuple sparsi.'''
 def preprocess_graph(adj):
-    adj = sp.coo_matrix(adj)
-    adj_ = adj + sp.eye(adj.shape[0])
+    adj = sp.coo_matrix(adj)           # conversione in formato COO 
+    adj_ = adj + sp.eye(adj.shape[0])  # aggiunta di self loop per maggiore stabilità
     degree_mat_inv_sqrt = sp.diags(np.power(np.array(adj_.sum(1)), -0.5).flatten())
-    adj_normalized = adj_.dot(degree_mat_inv_sqrt).transpose().dot(degree_mat_inv_sqrt)
+    adj_normalized = adj_.dot(degree_mat_inv_sqrt).transpose().dot(degree_mat_inv_sqrt)  # normalizzazione della matrice D-(1/2)*A*D-(1/2)
     return sparse_to_tuple(adj_normalized)
 
 def construct_feed_dict(adj_normalized, adj, features, placeholders):
@@ -43,14 +49,14 @@ def mask_test_edges(adj, test_percent=10., val_percent=5.):
     :param val_percent: percentage of edges in validation set
     :return: train incomplete adjacency matrix, validation and test sets
     """
-    # Remove diagonal elements
+    # Remove diagonal elements # non si considerano i collegamenti tra un nodo e se stesso
     adj = adj - sp.dia_matrix((adj.diagonal()[None, :], [0]), shape=adj.shape)
     adj.eliminate_zeros()
     # Check that diag is zero:
     assert adj.diagonal().sum() == 0
 
     edges_positive, _, _ = sparse_to_tuple(adj)
-    # Filtering out edges from lower triangle of adjacency matrix
+    # Filtering out edges from lower triangle of adjacency matrix # si assumono grafi non orientati # la matrice di adiacenza è simmetrica # si considera solo la parte al di sotto della diagonale per evitare di considerare i duplicati 
     edges_positive = edges_positive[edges_positive[:,1] > edges_positive[:,0],:]
     # val_edges, val_edges_false, test_edges, test_edges_false = None, None, None, None
 
@@ -58,7 +64,7 @@ def mask_test_edges(adj, test_percent=10., val_percent=5.):
     num_test = int(np.floor(edges_positive.shape[0] / (100. / test_percent)))
     num_val = int(np.floor(edges_positive.shape[0] / (100. / val_percent)))
 
-    # sample positive edges for test and val sets:
+    # sample positive edges for test and val sets: # si creano quindi il test set il validation set e il training set
     edges_positive_idx = np.arange(edges_positive.shape[0])
     np.random.shuffle(edges_positive_idx)
     val_edge_idx = edges_positive_idx[:num_val]

@@ -1,0 +1,396 @@
+WITH FEATURES
+
+TASK: node_clustering
+
+DATASET: cora
+MODEL: gcn_ae
+Clustering algorithm: kmeans
+AMI scores: 0.38427566470243907
+Silhouette scores: -0.15187375669786
+Total running times: 43.556222677230835
+
+Clustering algorithm: dbscan
+AMI scores: 0.1172638312452481
+Silhouette scores: -0.9350073855243722
+Total running times: 43.377984285354614
+
+Clustering algorithm: agglomerative
+AMI scores: 0.4553150881588095
+Silhouette scores: -0.04219370185380347
+Total running times: 43.573582887649536
+
+MODEL: gcn_vae
+Clustering algorithm: kmeans
+AMI scores: 0.43153350432346027
+Silhouette scores: -0.07351022374705914
+Total running times: 46.0439887046814
+
+Clustering algorithm: dbscan
+AMI scores: 0.10013506686918747
+Silhouette scores: -0.9016892312098268
+Total running times: 45.829899072647095
+
+Clustering algorithm: agglomerative
+AMI scores: 0.39052051882491534
+Silhouette scores: -0.01356393870108439
+Total running times: 46.19904279708862
+
+MODEL: linear_ae
+Clustering algorithm: kmeans
+AMI scores: 0.48751360746653244
+Silhouette scores: 0.1099880148383486
+Total running times: 45.40959358215332
+
+Clustering algorithm: dbscan
+AMI scores: 0.3735382079098084
+Silhouette scores: -0.7884047267355982
+Total running times: 45.480087757110596
+
+Clustering algorithm: agglomerative
+AMI scores: 0.49881607509127485
+Silhouette scores: 0.1563677961071232
+Total running times: 46.22962975502014
+
+MODEL: linear_vae
+Clustering algorithm: kmeans
+AMI scores: 0.48748823039144873
+Silhouette scores: 0.08465555945036714
+Total running times: 48.7634117603302
+
+Clustering algorithm: dbscan
+AMI scores: 0.3894088312458787
+Silhouette scores: -0.7880354505169868
+Total running times: 48.58660364151001
+
+Clustering algorithm: agglomerative
+AMI scores: 0.4655832825897248
+Silhouette scores: 0.0899493331958877
+Total running times: 48.597017765045166
+
+DATASET: citeseer
+MODEL: gcn_ae
+Clustering algorithm: kmeans
+AMI scores: 0.21611595124720753
+Silhouette scores: -0.13475462239610894
+Total running times: 65.57539510726929
+
+Clustering algorithm: dbscan
+AMI scores: -5.1277234553602974e-06
+Silhouette scores: -0.1604093789727335
+Total running times: 66.67691802978516
+
+Clustering algorithm: agglomerative
+AMI scores: 0.24941431208192766
+Silhouette scores: -0.04502827805853923
+Total running times: 65.23405718803406
+
+MODEL: gcn_vae
+Clustering algorithm: kmeans
+AMI scores: 0.2064961950249505
+Silhouette scores: -0.2175250745320304
+Total running times: 70.60407066345215
+
+Clustering algorithm: dbscan
+AMI scores: 0.11627895673264328
+Silhouette scores: -0.9155395250976857
+Total running times: 70.13608527183533
+
+Clustering algorithm: agglomerative
+AMI scores: 0.18734468130949203
+Silhouette scores: -0.14363786975486584
+Total running times: 70.442049741745
+
+MODEL: linear_ae
+Clustering algorithm: kmeans
+AMI scores: 0.20871786887657556
+Silhouette scores: -0.2723080327050287
+Total running times: 74.65784096717834
+
+Clustering algorithm: dbscan
+AMI scores: 0.1589537384396802
+Silhouette scores: -0.9125338142470695
+Total running times: 74.15168809890747
+
+Clustering algorithm: agglomerative
+AMI scores: 0.22534286628312505
+Silhouette scores: -0.17171188416612762
+Total running times: 74.64793014526367
+
+MODEL: linear_vae
+Clustering algorithm: kmeans
+AMI scores: 0.19648549206906618
+Silhouette scores: -0.27020964621576804
+Total running times: 83.97166967391968
+
+Clustering algorithm: dbscan
+AMI scores: 0.22889825033523736
+Silhouette scores: -0.9125338142470695
+Total running times: 82.65238666534424
+
+Clustering algorithm: agglomerative
+AMI scores: 0.19443319736894227
+Silhouette scores: -0.16309890760354295
+Total running times: 81.75142908096313
+
+DATASET: pubmed
+MODEL: gcn_ae
+Clustering algorithm: kmeans
+AMI scores: 0.22493378586430943
+Silhouette scores: 0.1258122328506913
+Total running times: 1261.695698261261
+
+Clustering algorithm: dbscan
+AMI scores: 0.0005584472323178123
+Silhouette scores: -0.4218152405618929
+Total running times: 1155.9841220378876
+
+Clustering algorithm: agglomerative
+AMI scores: 0.1938701920849714
+Silhouette scores: 0.08936039013802237
+Total running times: 1071.9298214912415
+
+MODEL: gcn_vae
+Clustering algorithm: kmeans
+AMI scores: 0.2117143842454601
+Silhouette scores: 0.09616932755725094
+Total running times: 1250.5461492538452
+
+Clustering algorithm: dbscan
+AMI scores: 0.0004968550765968412
+Silhouette scores: -0.336246895757913
+Total running times: 1325.4326074123383
+
+Clustering algorithm: agglomerative
+AMI scores: 0.3067988757571535
+Silhouette scores: 0.23300119770107852
+Total running times: 1351.6251311302185
+
+MODEL: linear_ae
+Clustering algorithm: kmeans
+AMI scores: 0.2264004609220822
+Silhouette scores: 0.14393284364047618
+Total running times: 1201.9994831085205
+
+Clustering algorithm: dbscan
+AMI scores: 0.0017396010769311356
+Silhouette scores: -0.5328837633091207
+Total running times: 1162.7425513267517
+
+Clustering algorithm: agglomerative
+AMI scores: 0.27149254777837295
+Silhouette scores: 0.16706374095671975
+Total running times: 961.7311189174652
+
+MODEL: linear_vae
+Clustering algorithm: kmeans
+AMI scores: 0.2818020733951795
+Silhouette scores: 0.1921279284998304
+Total running times: 1239.4645683765411
+
+Clustering algorithm: dbscan
+AMI scores: 0.0009381418970732752
+Silhouette scores: -0.9987827762844246
+Total running times: 1164.730147600174
+
+Clustering algorithm: agglomerative
+AMI scores: 0.25142155887762474
+Silhouette scores: 0.16450548183162683
+Total running times: 1190.8303577899933
+
+TASK: node_clustering
+
+DATASET: cora
+MODEL: gcn_ae
+Clustering algorithm: kmeans
+AMI scores: 0.3063275159706075
+Silhouette scores: -0.07828619287931726
+Total running times: 46.07151222229004
+
+Clustering algorithm: dbscan
+AMI scores: 0.31428007096624616
+Silhouette scores: -0.8810930576070901
+Total running times: 45.26260995864868
+
+Clustering algorithm: agglomerative
+AMI scores: 0.005242989543230426
+Silhouette scores: -0.8690000873365022
+Total running times: 45.060322523117065
+
+MODEL: gcn_vae
+Clustering algorithm: kmeans
+AMI scores: 0.32306293304053707
+Silhouette scores: -0.09110200588804249
+Total running times: 48.698262214660645
+
+Clustering algorithm: dbscan
+AMI scores: 0.11906709489782266
+Silhouette scores: -0.8822008862629247
+Total running times: 47.972928285598755
+
+Clustering algorithm: agglomerative
+AMI scores: 0.3476945533378399
+Silhouette scores: -0.07844938323668135
+Total running times: 47.96501040458679
+
+MODEL: linear_ae
+Clustering algorithm: kmeans
+AMI scores: 0.26414762953159715
+Silhouette scores: -0.12432199551159039
+Total running times: 44.50179862976074
+
+Clustering algorithm: dbscan
+AMI scores: 0.3562914328508915
+Silhouette scores: -0.6920236336779911
+Total running times: 45.11608815193176
+
+Clustering algorithm: agglomerative
+AMI scores: 0.2664408293657481
+Silhouette scores: -0.13199248902228963
+Total running times: 45.19711637496948
+
+MODEL: linear_vae
+Clustering algorithm: kmeans
+AMI scores: 0.320197879974746
+Silhouette scores: -0.03006665682361011
+Total running times: 47.13857412338257
+
+Clustering algorithm: dbscan
+AMI scores: 0.3088573889175915
+Silhouette scores: -0.8264401772525849
+Total running times: 47.57347798347473
+
+Clustering algorithm: agglomerative
+AMI scores: 0.32850015783937564
+Silhouette scores: -0.11942971397769478
+Total running times: 47.61439061164856
+
+DATASET: citeseer
+MODEL: gcn_ae
+Clustering algorithm: kmeans
+AMI scores: 0.10089112270403705
+Silhouette scores: -0.20364271315136093
+Total running times: 67.79783606529236
+
+Clustering algorithm: dbscan
+AMI scores: 0.13880573256708872
+Silhouette scores: -0.9299669371806433
+Total running times: 66.9989709854126
+
+Clustering algorithm: agglomerative
+AMI scores: 0.001780603391143046
+Silhouette scores: -0.801121761245927
+Total running times: 67.93616032600403
+
+MODEL: gcn_vae
+Clustering algorithm: kmeans
+AMI scores: 0.079297274348814
+Silhouette scores: -0.16877987818096085
+Total running times: 70.15288758277893
+
+Clustering algorithm: dbscan
+AMI scores: 0.1793117646960689
+Silhouette scores: -0.8575293056807936
+Total running times: 70.29995489120483
+
+Clustering algorithm: agglomerative
+AMI scores: 0.0807268271070615
+Silhouette scores: -0.12211803010036368
+Total running times: 70.32454133033752
+
+MODEL: linear_ae
+Clustering algorithm: kmeans
+AMI scores: 0.09392191084171009
+Silhouette scores: -0.25724031968957584
+Total running times: 65.02808856964111
+
+Clustering algorithm: dbscan
+AMI scores: 0.22588081182544686
+Silhouette scores: -0.8145476405169823
+Total running times: 64.92925119400024
+
+Clustering algorithm: agglomerative
+AMI scores: 0.04613927574498118
+Silhouette scores: -0.11270100576102679
+Total running times: 62.06534957885742
+
+MODEL: linear_vae
+Clustering algorithm: kmeans
+AMI scores: 0.1512708862102319
+Silhouette scores: -0.16925334088548666
+Total running times: 67.27759528160095
+
+Clustering algorithm: dbscan
+AMI scores: 0.21718001317345284
+Silhouette scores: -0.8467087466185753
+Total running times: 67.69440460205078
+
+Clustering algorithm: agglomerative
+AMI scores: 0.08410111132055353
+Silhouette scores: -0.12738913210533984
+Total running times: 69.05752491950989
+
+DATASET: pubmed
+MODEL: gcn_ae
+Clustering algorithm: kmeans
+AMI scores: 0.2730241469312081
+Silhouette scores: 0.08383305739097018
+Total running times: 1508.173246383667
+
+Clustering algorithm: dbscan
+AMI scores: 0.012399755057198002
+Silhouette scores: -0.9959933052695643
+Total running times: 1318.3388137817383
+
+Clustering algorithm: agglomerative
+AMI scores: 0.23311226928623746
+Silhouette scores: 0.10152535489095758
+Total running times: 1239.119922876358
+
+MODEL: gcn_vae
+Clustering algorithm: kmeans
+AMI scores: 0.24696270927504638
+Silhouette scores: 0.03543699605389393
+Total running times: 1423.2757930755615
+
+Clustering algorithm: dbscan
+AMI scores: 0.024201301589816454
+Silhouette scores: -0.9876248922249835
+Total running times: 1411.665432214737
+
+Clustering algorithm: agglomerative
+AMI scores: 0.10576022714183936
+Silhouette scores: 0.022813046109038972
+Total running times: 1514.4745910167694
+
+MODEL: linear_ae
+Clustering algorithm: kmeans
+AMI scores: 0.18247690017525744
+Silhouette scores: -0.14431225715516677
+Total running times: 1273.833134651184
+
+Clustering algorithm: dbscan
+AMI scores: 0.061859864067559174
+Silhouette scores: -0.9630775472942131
+Total running times: 1336.8616404533386
+
+Clustering algorithm: agglomerative
+AMI scores: 0.16835284500890904
+Silhouette scores: -0.1967116975897725
+Total running times: 1308.9249713420868
+
+MODEL: linear_vae
+Clustering algorithm: kmeans
+AMI scores: 0.2755144036129703
+Silhouette scores: 0.08868928182981965
+Total running times: 1517.5046582221985
+
+Clustering algorithm: dbscan
+AMI scores: 0.030385494895077046
+Silhouette scores: -0.9886392453212963
+Total running times: 1514.196670293808
+
+Clustering algorithm: agglomerative
+AMI scores: 0.14785747818792455
+Silhouette scores: -0.07171946386772006
+Total running times: 1496.5598359107971
+

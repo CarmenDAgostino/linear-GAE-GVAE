@@ -1,0 +1,32 @@
+Best parameter for Kmeans:
+ AMI score: 0.3058022841432692 
+ n_cluster: 7
+ init: k-means++
+
+ Silhouette score: -0.009561007489579722
+ n_cluster: 5
+ init: k-means++
+
+
+Best parameter for DBSCAN:
+ AMI score: 0.3671087745068588
+ eps: 0.1
+ min_samples: 3
+ metric: cosine
+
+ Silhouette score: 0.06957602338345936
+ eps: 0.1
+ min_samples: 7
+ metric: euclidean
+
+
+Best parameter for AgglomerativeClustering:
+ AMI score: 0.2735894291180963
+ n_cluster: 9
+ linkage: average
+ affinity: cosine
+
+ Silhouette score: -0.06264368398300146
+ n_cluster: 7
+ linkage: average
+ affinity: cosine

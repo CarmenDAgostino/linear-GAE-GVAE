@@ -1,0 +1,50 @@
+Dataset: cora
+Numero di nodi: 2708
+Numero di archi: 5278
+Numero di classi di etichette: 7
+Nomi delle etichette: 0, 1, 2, 3, 4, 5, 6
+Diretto: False
+Connesso: False
+Grado medio dei nodi: 3.8980797636632203
+Average Path Length: 6.310998681298742
+Densit� della rete: 0.0014399999126942077
+Raggio della rete: 10
+Diametro della rete: 19
+Centralit� di degree media: 0.0014399999126942043
+Centralit� di betweenness media: 0.0016527620073254735
+Centralit� di closeness media: 0.1374760279160303
+Coefficiente di clustering globale: 0.24067329850193728
+
+Dataset: citeseer
+Numero di nodi: 3327
+Numero di archi: 4676
+Numero di classi di etichette: 6
+Nomi delle etichette: 0, 1, 2, 3, 4, 5
+Diretto: False
+Connesso: False
+Grado medio dei nodi: 2.810940787496243
+Average Path Length: 9.329714532486845
+Densit� della rete: 0.000845141547653711
+Raggio della rete: 15
+Diametro della rete: 28
+Centralit� di degree media: 0.0008451415476537404
+Centralit� di betweenness media: 0.0010171388899888449
+Centralit� di closeness media: 0.045278713946521346
+Coefficiente di clustering globale: 0.14147102442629086
+
+Dataset: pubmed
+Numero di nodi: 19717
+Numero di archi: 44327
+Numero di classi di etichette: 3
+Nomi delle etichette: 0, 1, 2
+Diretto: False
+Connesso: True
+Grado medio dei nodi: 4.496322970025866
+Average Path Length: 6.336870027999047
+Densit� della rete: 0.00022805452272397372
+Raggio della rete: 10
+Diametro della rete: 18
+Centralit� di degree media: 0.0002280545227239648
+Centralit� di betweenness media: 0.0002707009905147897
+Centralit� di closeness media: 0.16034253276732366
+Coefficiente di clustering globale: 0.060175209437523615

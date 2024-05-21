@@ -1,0 +1,685 @@
+TASK: link_prediction
+
+DATASET: cora
+MODEL: gcn_ae
+Dropout: 0.0
+AUC scores: 0.8341260725383377
+AP scores: 0.8759839333301139
+Total running times: 41.297035455703735
+
+Dropout: 0.1
+AUC scores: 0.8241775255734908
+AP scores: 0.856274837170069
+Total running times: 41.2707736492157
+
+Dropout: 0.3
+AUC scores: 0.7960601881690426
+AP scores: 0.8215795335323967
+Total running times: 41.27248287200928
+
+Dropout: 0.5
+AUC scores: 0.8110370181003785
+AP scores: 0.838705408866551
+Total running times: 41.677865743637085
+
+Dropout: 0.7
+AUC scores: 0.7305682877913361
+AP scores: 0.7464302767751503
+Total running times: 41.336730003356934
+
+Dropout: 0.9
+AUC scores: 0.5802274879468835
+AP scores: 0.5827751872855248
+Total running times: 41.809000730514526
+
+MODEL: gcn_vae
+Dropout: 0.0
+AUC scores: 0.8359119861447671
+AP scores: 0.8614972262254762
+Total running times: 44.095499992370605
+
+Dropout: 0.1
+AUC scores: 0.8475096226897443
+AP scores: 0.8731007058226271
+Total running times: 44.374683141708374
+
+Dropout: 0.3
+AUC scores: 0.8312311641924321
+AP scores: 0.8565118892860878
+Total running times: 44.7792444229126
+
+Dropout: 0.5
+AUC scores: 0.7897482797979325
+AP scores: 0.8149783583166884
+Total running times: 44.88422250747681
+
+Dropout: 0.7
+AUC scores: 0.7423999654339303
+AP scores: 0.7643930135414714
+Total running times: 45.19568610191345
+
+Dropout: 0.9
+AUC scores: 0.6172743933834781
+AP scores: 0.6057061166843656
+Total running times: 44.82232213020325
+
+MODEL: linear_ae
+Dropout: 0.0
+AUC scores: 0.8381767838432429
+AP scores: 0.8813043267421466
+Total running times: 41.635019063949585
+
+Dropout: 0.1
+AUC scores: 0.8110136139906168
+AP scores: 0.8501460642146474
+Total running times: 41.716084241867065
+
+Dropout: 0.3
+AUC scores: 0.8305074371059559
+AP scores: 0.8672882610254242
+Total running times: 41.684847354888916
+
+Dropout: 0.5
+AUC scores: 0.7933489120689594
+AP scores: 0.8223165771262597
+Total running times: 41.4237003326416
+
+Dropout: 0.7
+AUC scores: 0.6929380799268352
+AP scores: 0.7138968857261412
+Total running times: 41.70229148864746
+
+Dropout: 0.9
+AUC scores: 0.5523801979627623
+AP scores: 0.5622870830602565
+Total running times: 40.3571298122406
+
+MODEL: linear_vae
+Dropout: 0.0
+AUC scores: 0.8585563624972545
+AP scores: 0.8912443907149585
+Total running times: 45.26954889297485
+
+Dropout: 0.1
+AUC scores: 0.8499112444145192
+AP scores: 0.8786455134280602
+Total running times: 44.34099745750427
+
+Dropout: 0.3
+AUC scores: 0.818241883274703
+AP scores: 0.8493271526988734
+Total running times: 44.91326189041138
+
+Dropout: 0.5
+AUC scores: 0.7763665299626614
+AP scores: 0.8082820672927438
+Total running times: 42.99841618537903
+
+Dropout: 0.7
+AUC scores: 0.6991527712266274
+AP scores: 0.7129895218206722
+Total running times: 45.19499397277832
+
+Dropout: 0.9
+AUC scores: 0.5582132222418257
+AP scores: 0.565205264998614
+Total running times: 44.5194308757782
+
+DATASET: citeseer
+MODEL: gcn_ae
+Dropout: 0.0
+AUC scores: 0.7717956768506219
+AP scores: 0.8296135741985211
+Total running times: 62.30469012260437
+
+Dropout: 0.1
+AUC scores: 0.7773505615263857
+AP scores: 0.8232494325435453
+Total running times: 62.846819162368774
+
+Dropout: 0.3
+AUC scores: 0.7899335829006159
+AP scores: 0.8272489783026292
+Total running times: 62.469135999679565
+
+Dropout: 0.5
+AUC scores: 0.771650766815602
+AP scores: 0.8070283200148403
+Total running times: 62.53048491477966
+
+Dropout: 0.7
+AUC scores: 0.7185315783117983
+AP scores: 0.741041592335464
+Total running times: 62.54784417152405
+
+Dropout: 0.9
+AUC scores: 0.5929380509600289
+AP scores: 0.601256725152484
+Total running times: 62.0367796421051
+
+MODEL: gcn_vae
+Dropout: 0.0
+AUC scores: 0.7859147445960634
+AP scores: 0.8322515694629535
+Total running times: 66.9985408782959
+
+Dropout: 0.1
+AUC scores: 0.7895954594855693
+AP scores: 0.8357038071245606
+Total running times: 67.24206900596619
+
+Dropout: 0.3
+AUC scores: 0.7920734210844101
+AP scores: 0.8342403262903735
+Total running times: 67.63423919677734
+
+Dropout: 0.5
+AUC scores: 0.7491317473735055
+AP scores: 0.7878198892765687
+Total running times: 67.29964065551758
+
+Dropout: 0.7
+AUC scores: 0.7054196353097452
+AP scores: 0.7275903586486645
+Total running times: 66.95570468902588
+
+Dropout: 0.9
+AUC scores: 0.6046564424586404
+AP scores: 0.6157175405018543
+Total running times: 67.88142704963684
+
+MODEL: linear_ae
+Dropout: 0.0
+AUC scores: 0.7746310832025117
+AP scores: 0.8306579820122194
+Total running times: 62.4003164768219
+
+Dropout: 0.1
+AUC scores: 0.7509431228112546
+AP scores: 0.8186975869145143
+Total running times: 62.393508195877075
+
+Dropout: 0.3
+AUC scores: 0.7725226421929718
+AP scores: 0.8125712963770702
+Total running times: 62.3699676990509
+
+Dropout: 0.5
+AUC scores: 0.7150199251298153
+AP scores: 0.7623453499254029
+Total running times: 63.725539684295654
+
+Dropout: 0.7
+AUC scores: 0.6910252384977661
+AP scores: 0.7147671499576806
+Total running times: 61.867053270339966
+
+Dropout: 0.9
+AUC scores: 0.5407317956768506
+AP scores: 0.5481759701380394
+Total running times: 61.64710283279419
+
+MODEL: linear_vae
+Dropout: 0.0
+AUC scores: 0.7669556816809564
+AP scores: 0.8124334018541262
+Total running times: 66.39415073394775
+
+Dropout: 0.1
+AUC scores: 0.7877357807028137
+AP scores: 0.8299513193167417
+Total running times: 66.57415676116943
+
+Dropout: 0.3
+AUC scores: 0.7693515275932858
+AP scores: 0.8159418731059374
+Total running times: 66.52194857597351
+
+Dropout: 0.5
+AUC scores: 0.7056683975365293
+AP scores: 0.7565314184826596
+Total running times: 65.95284628868103
+
+Dropout: 0.7
+AUC scores: 0.6739958942156744
+AP scores: 0.6923685963186622
+Total running times: 66.24372887611389
+
+Dropout: 0.9
+AUC scores: 0.5485714285714286
+AP scores: 0.5555486699186798
+Total running times: 65.80416226387024
+
+TASK: node_clustering
+
+DATASET: cora
+MODEL: gcn_ae
+Dropout: 0.0
+AMI scores: 0.34884954203882407
+Total running times: 43.936203479766846
+
+Dropout: 0.1
+AMI scores: 0.3325207551097105
+Total running times: 42.29600191116333
+
+Dropout: 0.3
+AMI scores: 0.3192212671383945
+Total running times: 43.59227204322815
+
+Dropout: 0.5
+AMI scores: 0.33385109686325976
+Total running times: 42.62502121925354
+
+Dropout: 0.7
+AMI scores: 0.19720853017141074
+Total running times: 43.639936208724976
+
+Dropout: 0.9
+AMI scores: 0.049005464199210085
+Total running times: 42.68872046470642
+
+MODEL: gcn_vae
+Dropout: 0.0
+AMI scores: 0.3247162208383048
+Total running times: 46.04420351982117
+
+Dropout: 0.1
+AMI scores: 0.28712897885554356
+Total running times: 45.48198342323303
+
+Dropout: 0.3
+AMI scores: 0.2787924870262483
+Total running times: 46.54487490653992
+
+Dropout: 0.5
+AMI scores: 0.2768573783351865
+Total running times: 45.57148599624634
+
+Dropout: 0.7
+AMI scores: 0.16871484553417349
+Total running times: 48.14123511314392
+
+Dropout: 0.9
+AMI scores: 0.02344135531973666
+Total running times: 44.39622783660889
+
+MODEL: linear_ae
+Dropout: 0.0
+AMI scores: 0.32098348145643596
+Total running times: 43.94694781303406
+
+Dropout: 0.1
+AMI scores: 0.27571353254068903
+Total running times: 41.04328465461731
+
+Dropout: 0.3
+AMI scores: 0.2587893387382741
+Total running times: 43.70873665809631
+
+Dropout: 0.5
+AMI scores: 0.2544255050962246
+Total running times: 40.968599796295166
+
+Dropout: 0.7
+AMI scores: 0.22450982322268484
+Total running times: 43.30449652671814
+
+Dropout: 0.9
+AMI scores: 0.10458928321465848
+Total running times: 40.4620099067688
+
+MODEL: linear_vae
+Dropout: 0.0
+AMI scores: 0.33138756351375015
+Total running times: 46.83981108665466
+
+Dropout: 0.1
+AMI scores: 0.3066281870860482
+Total running times: 43.37279963493347
+
+Dropout: 0.3
+AMI scores: 0.36581451575328877
+Total running times: 46.71743392944336
+
+Dropout: 0.5
+AMI scores: 0.21488364054599493
+Total running times: 43.52234363555908
+
+Dropout: 0.7
+AMI scores: 0.1424828028991538
+Total running times: 46.132177114486694
+
+Dropout: 0.9
+AMI scores: 0.021532076751075026
+Total running times: 43.53360176086426
+
+DATASET: citeseer
+MODEL: gcn_ae
+Dropout: 0.0
+AMI scores: 0.08040755651047875
+Total running times: 63.935986042022705
+
+Dropout: 0.1
+AMI scores: 0.09980118046986197
+Total running times: 63.22038555145264
+
+Dropout: 0.3
+AMI scores: 0.09500576535813936
+Total running times: 65.02439284324646
+
+Dropout: 0.5
+AMI scores: 0.09818119406630833
+Total running times: 62.313215494155884
+
+Dropout: 0.7
+AMI scores: 0.06867043262425901
+Total running times: 62.78256797790527
+
+Dropout: 0.9
+AMI scores: 0.02980555235234313
+Total running times: 63.800548791885376
+
+MODEL: gcn_vae
+Dropout: 0.0
+AMI scores: 0.1043236534343118
+Total running times: 66.67827296257019
+
+Dropout: 0.1
+AMI scores: 0.13208621172422552
+Total running times: 68.53723788261414
+
+Dropout: 0.3
+AMI scores: 0.12562022984750199
+Total running times: 67.26172161102295
+
+Dropout: 0.5
+AMI scores: 0.09653361432035758
+Total running times: 69.01056623458862
+
+Dropout: 0.7
+AMI scores: 0.06280874612423563
+Total running times: 66.43643450737
+
+Dropout: 0.9
+AMI scores: 0.014898800329202147
+Total running times: 69.21578574180603
+
+MODEL: linear_ae
+Dropout: 0.0
+AMI scores: 0.07013690768831551
+Total running times: 61.77740502357483
+
+Dropout: 0.1
+AMI scores: 0.07270961255190733
+Total running times: 63.25317072868347
+
+Dropout: 0.3
+AMI scores: 0.09045418465829187
+Total running times: 62.66456198692322
+
+Dropout: 0.5
+AMI scores: 0.0845134990572407
+Total running times: 62.831114768981934
+
+Dropout: 0.7
+AMI scores: 0.09350763949366558
+Total running times: 61.6551513671875
+
+Dropout: 0.9
+AMI scores: 0.0454666167101729
+Total running times: 62.31157612800598
+
+MODEL: linear_vae
+Dropout: 0.0
+AMI scores: 0.1338805493009542
+Total running times: 66.14000201225281
+
+Dropout: 0.1
+AMI scores: 0.12620793096532254
+Total running times: 67.93162441253662
+
+Dropout: 0.3
+AMI scores: 0.12358869738031722
+Total running times: 64.7817063331604
+
+Dropout: 0.5
+AMI scores: 0.0881880896906298
+Total running times: 67.7036645412445
+
+Dropout: 0.7
+AMI scores: 0.07145252514173488
+Total running times: 65.31072664260864
+
+Dropout: 0.9
+AMI scores: 0.0077714185331148045
+Total running times: 65.17727851867676
+TASK: link_prediction
+
+DATASET: pubmed
+MODEL: gcn_ae
+Dropout: 0.0
+AUC scores: 0.8433739809915417
+AP scores: 0.8574919062219007
+Total running times: 532.3935971260071
+
+Dropout: 0.1
+AUC scores: 0.8468348984331219
+AP scores: 0.8614431386051861
+Total running times: 521.102945804596
+
+Dropout: 0.3
+AUC scores: 0.834237243455864
+AP scores: 0.8438731065756528
+Total running times: 518.9120104312897
+
+Dropout: 0.5
+AUC scores: 0.8207352286537684
+AP scores: 0.8241584926564632
+Total running times: 533.0714085102081
+
+Dropout: 0.7
+AUC scores: 0.8004819009924539
+AP scores: 0.8059541913493877
+Total running times: 527.979743719101
+
+Dropout: 0.9
+AUC scores: 0.7102501427507852
+AP scores: 0.7200376236349455
+Total running times: 523.5958416461945
+
+MODEL: gcn_vae
+Dropout: 0.0
+AUC scores: 0.8347430821869827
+AP scores: 0.8427696143850504
+Total running times: 576.0532159805298
+
+Dropout: 0.1
+AUC scores: 0.8375976906140442
+AP scores: 0.8544187788464186
+Total running times: 549.170089006424
+
+Dropout: 0.3
+AUC scores: 0.8343568048749496
+AP scores: 0.8474252798794143
+Total running times: 555.5253632068634
+
+Dropout: 0.5
+AUC scores: 0.8180327129410002
+AP scores: 0.8325028821789547
+Total running times: 571.3441917896271
+
+Dropout: 0.7
+AUC scores: 0.7804841654556949
+AP scores: 0.7850399389057715
+Total running times: 554.2306973934174
+
+Dropout: 0.9
+AUC scores: 0.6475004306960209
+AP scores: 0.6703730189436001
+Total running times: 549.0297288894653
+
+MODEL: linear_ae
+Dropout: 0.0
+AUC scores: 0.8313749222099858
+AP scores: 0.8548555533443547
+Total running times: 510.8910801410675
+
+Dropout: 0.1
+AUC scores: 0.8307297690980594
+AP scores: 0.8534389287711848
+Total running times: 503.8735284805298
+
+Dropout: 0.3
+AUC scores: 0.8241081995969581
+AP scores: 0.8440556414091516
+Total running times: 525.0452029705048
+
+Dropout: 0.5
+AUC scores: 0.8225323408929477
+AP scores: 0.8402842560728729
+Total running times: 489.151575088501
+
+Dropout: 0.7
+AUC scores: 0.7862476265900117
+AP scores: 0.8045919229905811
+Total running times: 487.3113422393799
+
+Dropout: 0.9
+AUC scores: 0.6510126651103234
+AP scores: 0.6709734456509365
+Total running times: 480.0215072631836
+
+MODEL: linear_vae
+Dropout: 0.0
+AUC scores: 0.8501888546051688
+AP scores: 0.8641077800707249
+Total running times: 512.953174829483
+
+Dropout: 0.1
+AUC scores: 0.8371904894172999
+AP scores: 0.8515503821184016
+Total running times: 525.8520467281342
+
+Dropout: 0.3
+AUC scores: 0.8287456655485539
+AP scores: 0.8402042481639693
+Total running times: 515.2335464954376
+
+Dropout: 0.5
+AUC scores: 0.809422763476
+AP scores: 0.8224398013226107
+Total running times: 520.5120348930359
+
+Dropout: 0.7
+AUC scores: 0.7619784403550156
+AP scores: 0.78122699786236
+Total running times: 519.34326171875
+
+Dropout: 0.9
+AUC scores: 0.6040971919026704
+AP scores: 0.6156452137877063
+Total running times: 511.06978845596313
+
+TASK: node_clustering
+
+DATASET: pubmed
+MODEL: gcn_ae
+Dropout: 0.0
+AMI scores: 0.21009639999777033
+Total running times: 632.8204853534698
+
+Dropout: 0.1
+AMI scores: 0.22343175788392033
+Total running times: 626.9814562797546
+
+Dropout: 0.3
+AMI scores: 0.2043373336288683
+Total running times: 630.8805568218231
+
+Dropout: 0.5
+AMI scores: 0.1965123074629582
+Total running times: 630.0991201400757
+
+Dropout: 0.7
+AMI scores: 0.23324521761841055
+Total running times: 624.8673000335693
+
+Dropout: 0.9
+AMI scores: 0.08246433978900619
+Total running times: 627.0209619998932
+
+MODEL: gcn_vae
+Dropout: 0.0
+AMI scores: 0.2515553871886065
+Total running times: 678.0203671455383
+
+Dropout: 0.1
+AMI scores: 0.2607393235324271
+Total running times: 675.9855787754059
+
+Dropout: 0.3
+AMI scores: 0.22403990069060392
+Total running times: 677.0562279224396
+
+Dropout: 0.5
+AMI scores: 0.25440063566835963
+Total running times: 667.5498611927032
+
+Dropout: 0.7
+AMI scores: 0.2050118462754318
+Total running times: 662.1595487594604
+
+Dropout: 0.9
+AMI scores: 0.025463414128771834
+Total running times: 675.2170031070709
+
+MODEL: linear_ae
+Dropout: 0.0
+AMI scores: 0.18367945076304326
+Total running times: 625.9723155498505
+
+Dropout: 0.1
+AMI scores: 0.14922405193747515
+Total running times: 622.9666223526001
+
+Dropout: 0.3
+AMI scores: 0.1501787180844427
+Total running times: 617.0927379131317
+
+Dropout: 0.5
+AMI scores: 0.1636131475972742
+Total running times: 618.1527945995331
+
+Dropout: 0.7
+AMI scores: 0.1884987089891469
+Total running times: 627.3477103710175
+
+Dropout: 0.9
+AMI scores: 0.12480825751301892
+Total running times: 634.8193848133087
+
+MODEL: linear_vae
+Dropout: 0.0
+AMI scores: 0.28947807464920455
+Total running times: 685.4086952209473
+
+Dropout: 0.1
+AMI scores: 0.2911981329859286
+Total running times: 679.4608540534973
+
+Dropout: 0.3
+AMI scores: 0.25315963595696817
+Total running times: 682.3799295425415
+
+Dropout: 0.5
+AMI scores: 0.20779809145172515
+Total running times: 703.4382905960083
+
+Dropout: 0.7
+AMI scores: 0.17111020750686642
+Total running times: 691.7513515949249
+
+Dropout: 0.9
+AMI scores: 0.05521157653412019
+Total running times: 694.9678812026978
+

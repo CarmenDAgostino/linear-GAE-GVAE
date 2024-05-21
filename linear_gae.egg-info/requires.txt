@@ -1,0 +1,5 @@
+networkx==2.2
+numpy
+scikit-learn
+scipy==1.*
+tensorflow==1.*
