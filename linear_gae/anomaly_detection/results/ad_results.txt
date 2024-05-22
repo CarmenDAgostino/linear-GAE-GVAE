@@ -1,0 +1,4 @@
+DATASET: AIDS
+MODEL: gcn_ae
+DATASET: AIDS
+MODEL: gcn_ae

@@ -154,7 +154,7 @@ for i in range(classes.size):
         raise ValueError('Undefined model!')        
 
     # Iterating over training set   
-    for adj_index in range(len(train_adjs)): 
+    for adj_index in range(5): #TODO len(train_adjs)
         
         if FLAGS.verbose: 
             print(f"Training on item: {adj_index}")
