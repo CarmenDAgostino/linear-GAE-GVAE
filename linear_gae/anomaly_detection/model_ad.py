@@ -86,6 +86,8 @@ class GCNModelAE(Model):
         self.reconstructions = InnerProductDecoder(act = lambda x: x,
                                                    logging = self.logging)(self.z_mean)
 
+    def _predict(self):
+        return self.reconstructions
 
 class GCNModelVAE(Model):
     """
@@ -131,6 +133,8 @@ class GCNModelVAE(Model):
         self.reconstructions = InnerProductDecoder(act = lambda x: x,
                                                    logging = self.logging)(self.z)
 
+    def _predict(self):
+        return self.reconstructions
 
 class LinearModelAE(Model):
     """
@@ -161,18 +165,6 @@ class LinearModelAE(Model):
     
     def _predict(self):
         adj_output = self.reconstructions
-        '''
-        z_mean = GraphConvolutionSparse(input_dim = self.input_dim,
-                                        output_dim = FLAGS.dimension,
-                                        adj = adj_input,
-                                        features_nonzero = self.features_nonzero,
-                                        act = lambda x: x,
-                                        dropout = self.dropout,
-                                        logging = self.logging)(self.inputs)
-
-        adj_output = InnerProductDecoder(act = lambda x: x,
-                                            logging = self.logging)(z_mean)
-        '''
         return adj_output
        
 
@@ -216,6 +208,8 @@ class LinearModelVAE(Model):
         self.reconstructions = InnerProductDecoder(act = lambda x: x,
                                                    logging = self.logging)(self.z)
 
+    def _predict(self):
+        return self.reconstructions
 
 class DeepGCNModelAE(Model):
     """
@@ -258,6 +252,8 @@ class DeepGCNModelAE(Model):
         self.reconstructions = InnerProductDecoder(act = lambda x: x,
                                                    logging = self.logging)(self.z_mean)
 
+    def _predict(self):
+        return self.reconstructions
 
 class DeepGCNModelVAE(Model):
     """
@@ -310,3 +306,6 @@ class DeepGCNModelVAE(Model):
 
         self.reconstructions = InnerProductDecoder(act = lambda x: x,
                                                    logging = self.logging)(self.z)
+ 
+    def _predict(self):
+        return self.reconstructions
