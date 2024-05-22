@@ -67,7 +67,7 @@ flags.DEFINE_string('model', 'gcn_ae', 'Name of the model')
 
 # Model parameters
 flags.DEFINE_float('dropout', 0., 'Dropout rate (1 - keep probability).')
-flags.DEFINE_integer('epochs', 200, 'Number of epochs in training.')
+flags.DEFINE_integer('epochs', 50, 'Number of epochs in training.')
 flags.DEFINE_boolean('features', False, 'Include node features or not in encoder')
 flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate (with Adam)')
 flags.DEFINE_integer('hidden', 32, 'Number of units in GCN hidden layer(s).')
@@ -154,7 +154,7 @@ for i in range(classes.size):
         raise ValueError('Undefined model!')        
 
     # Iterating over training set   
-    for adj_index in range(5): #TODO len(train_adjs)
+    for adj_index in range(1): #TODO len(train_adjs)
         
         if FLAGS.verbose: 
             print(f"Training on item: {adj_index}")

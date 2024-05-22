@@ -1,5 +1,7 @@
 import subprocess
 import re
+import logging
+logging.getLogger('tensorflow').setLevel(logging.ERROR)
 
 # codice che verifica il comportamento dei modelli per il task di anomaly detection
 
@@ -24,9 +26,9 @@ def write_output(output) :
     for match in class_matches:
         class_number, auc_score, f1_score, mean_anomaly_score = match
         file.write(f"Run for class {class_number}\n")
-        file.write(f"AUC score: {auc_score}\n")
-        file.write(f"F1 score: {f1_score}\n")
-        file.write(f"Mean anomaly score: {mean_anomaly_score}\n\n")
+        file.write(f"AUC score: {auc_score}")
+        file.write(f"F1 score: {f1_score}")
+        file.write(f"Mean anomaly score: {mean_anomaly_score}\n")
 
     if mean_match:
         mean_values = mean_match.groups()
@@ -40,7 +42,7 @@ file = open(output_file, "a")
 
 # training per diversi algoritmi di clustering
 for dataset in datasets:
-    file.write(f"DATASET: {dataset}\n" )
+    file.write(f"DATASET: {dataset}\n\n" )
 
     for model in models:
         file.write(f"MODEL: {model}\n" )
