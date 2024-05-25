@@ -1,6 +1,8 @@
+from typing import Counter
 import torch
 from torch_geometric.datasets import TUDataset
-#import numpy as np
+
+import numpy as np
 from sklearn.model_selection import train_test_split
 import random
 
@@ -35,14 +37,19 @@ def load_graph_dataset(dataset_name):
     return adjacency_matrices, graph_labels, node_features
 
 
-''' Funzione per eseguire il padding dei grafi più piccoli e il sampling
-    dei grafi più grandi in modo che tutti i grafi del dataset abbiano
-    la stessa dimensione'''
+''' Funzione per eseguire il padding dei grafi in modo che tutti 
+    i grafi del dataset abbiano la stessa dimensione'''
 
-def sample_and_pad_graphs(adj_matrices, node_features, target_num_nodes):
+def sample_and_pad_graphs(adj_matrices, node_features):
     
     processed_adj_matrices = []
     processed_node_features = []
+
+    target_num_nodes = np.max([matrix.shape[0] for matrix in adj_matrices])
+
+    # Controllo necessario per problemi di memoria
+    if target_num_nodes > 2000:
+        target_num_nodes = 2000
     
     for adj, features in zip(adj_matrices, node_features):
         num_nodes = adj.shape[0]
@@ -50,7 +57,7 @@ def sample_and_pad_graphs(adj_matrices, node_features, target_num_nodes):
         if num_nodes > target_num_nodes:
             # Sampling: seleziona target_num_nodes nodi e crea il grafo indotto
             nodes = random.sample(range(num_nodes), target_num_nodes)
-            nodes.sort()  # Ordina i nodi per mantenere l'ordine
+            nodes.sort() 
             adj = adj[nodes, :][:, nodes]
             if features is not None:
                 features = features[nodes, :]
@@ -69,7 +76,7 @@ def sample_and_pad_graphs(adj_matrices, node_features, target_num_nodes):
         processed_adj_matrices.append(adj)
         processed_node_features.append(features)
 
-    return processed_adj_matrices, processed_node_features
+    return processed_adj_matrices, processed_node_features, target_num_nodes
 
 
 
@@ -130,11 +137,6 @@ def create_train_test_sets(adj_matrices, node_features, labels, normal_class):
     return train_adj_matrices, train_node_features, train_labels, test_adj_matrices, test_node_features, test_labels
 
 
-
-
-
-
-
 '''
 # Test 
 adj_matrices, labels, node_features = load_graph_dataset("IMDB-BINARY")
@@ -153,14 +155,12 @@ print(labels[3])
 print("\n")
 
 
-num_nodes = 37
-adj_matrices_2, node_features_2 = sample_and_pad_graphs(adj_matrices, node_features, num_nodes)
+adj_matrices_2, node_features_2, num_nodes = sample_and_pad_graphs(adj_matrices, node_features)
 for a,f in zip(adj_matrices_2,node_features_2) :
     if a.shape[0] != num_nodes :
        print(f" diverso   {a.shape[0]} ")
     if f != None and a.shape[0] != f.shape[0]:
        print(f" diverso   {a.shape[0]}  - {f.shape[0]}") 
-
 
 
 train_adj_matrices, train_node_features, train_labels, test_adj_matrices, test_node_features, test_labels = create_train_test_sets(adj_matrices_2, node_features_2, labels, normal_class=0)
@@ -169,4 +169,5 @@ print("Numero di grafi nel training set:", len(train_adj_matrices))
 print("Numero di grafi nel test set:", len(test_adj_matrices))
 print("Numero di etichette nel training set:", len(train_labels))
 print("Numero di etichette nel test set:", len(test_labels))
+
 '''

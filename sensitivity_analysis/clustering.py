@@ -16,7 +16,7 @@ tasks = ["node_clustering"]
 
 
 # funzione per scrivere il risultato
-def write_output(output,task,alg) :
+def write_output(output,alg) :
 
     mi_pattern = re.compile(r'Adjusted MI scores\s+\[(.*?)\]', re.DOTALL)
     s_pattern = re.compile(r'Silhouette scores\s+\[(.*?)\]', re.DOTALL)
@@ -58,7 +58,7 @@ for task in tasks:
 
                 print(f"Model trained and tested for clustering algorithm {alg}.")
                 
-                write_output(output,task,alg)
+                write_output(output,alg)
 
 file.close()    
 
