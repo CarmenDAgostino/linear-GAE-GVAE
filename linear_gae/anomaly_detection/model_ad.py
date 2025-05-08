@@ -58,11 +58,11 @@ class GCNModelAE(Model):
     Standard Graph Autoencoder from Kipf and Welling (2016),
     with 2-layer GCN encoder and inner product decoder
     """
-    def __init__(self, placeholders, num_features, features_nonzero, **kwargs):
+    def __init__(self, placeholders, num_features, **kwargs):
         super(GCNModelAE, self).__init__(**kwargs)
         self.inputs = placeholders['features']
         self.input_dim = num_features
-        self.features_nonzero = features_nonzero
+        self.features_nonzero = placeholders['features_nonzero']
         self.adj = placeholders['adj']
         self.dropout = placeholders['dropout']
         self.build()
@@ -94,12 +94,12 @@ class GCNModelVAE(Model):
     Standard Graph Variational Autoencoder from Kipf and Welling (2016),
     with 2-layer GCN encoder, Gaussian distributions and inner product decoder
     """
-    def __init__(self, placeholders, num_features, num_nodes, features_nonzero, **kwargs):
+    def __init__(self, placeholders, num_features, num_nodes, **kwargs):
         super(GCNModelVAE, self).__init__(**kwargs)
 
         self.inputs = placeholders['features']
         self.input_dim = num_features
-        self.features_nonzero = features_nonzero
+        self.features_nonzero = placeholders['features_nonzero']
         self.n_samples = num_nodes
         self.adj = placeholders['adj']
         self.dropout = placeholders['dropout']
@@ -142,11 +142,11 @@ class LinearModelAE(Model):
     with linear encoder and inner product decoder
     """
 
-    def __init__(self, placeholders, num_features, features_nonzero, **kwargs):
+    def __init__(self, placeholders, num_features, **kwargs):
         super(LinearModelAE, self).__init__(**kwargs)
         self.inputs = placeholders['features']
         self.input_dim = num_features
-        self.features_nonzero = features_nonzero
+        self.features_nonzero = placeholders['features_nonzero']
         self.adj = placeholders['adj']
         self.dropout = placeholders['dropout']
         self.build()
@@ -174,12 +174,12 @@ class LinearModelVAE(Model):
     NeurIPS 2019 workshop paper, with Gaussian distributions, linear
     encoders for mu and sigma, and inner product decoder
     """
-    def __init__(self, placeholders, num_features, num_nodes, features_nonzero, **kwargs):
+    def __init__(self, placeholders, num_features, num_nodes, **kwargs):
         super(LinearModelVAE, self).__init__(**kwargs)
 
         self.inputs = placeholders['features']
         self.input_dim = num_features
-        self.features_nonzero = features_nonzero
+        self.features_nonzero = placeholders['features_nonzero']
         self.n_samples = num_nodes
         self.adj = placeholders['adj']
         self.dropout = placeholders['dropout']
@@ -216,12 +216,12 @@ class DeepGCNModelAE(Model):
     "Deep" Graph Autoencoder from Section 4 of NeurIPS 2019 workshop paper,
     with 3-layer GCN encoder, and inner product decoder
     """
-    def __init__(self, placeholders, num_features, features_nonzero, **kwargs):
+    def __init__(self, placeholders, num_features, **kwargs):
         super(DeepGCNModelAE, self).__init__(**kwargs)
 
         self.inputs = placeholders['features']
         self.input_dim = num_features
-        self.features_nonzero = features_nonzero
+        self.features_nonzero = placeholders['features_nonzero']
         self.adj = placeholders['adj']
         self.dropout = placeholders['dropout']
         self.build()
@@ -261,12 +261,12 @@ class DeepGCNModelVAE(Model):
     workshop paper, with Gaussian distributions, 3-layer GCN encoders for
     mu and sigma, and inner product decoder
     """
-    def __init__(self, placeholders, num_features, num_nodes, features_nonzero, **kwargs):
+    def __init__(self, placeholders, num_features, num_nodes, **kwargs):
         super(DeepGCNModelVAE, self).__init__(**kwargs)
 
         self.inputs = placeholders['features']
         self.input_dim = num_features
-        self.features_nonzero = features_nonzero
+        self.features_nonzero = placeholders['features_nonzero']
         self.n_samples = num_nodes
         self.adj = placeholders['adj']
         self.dropout = placeholders['dropout']

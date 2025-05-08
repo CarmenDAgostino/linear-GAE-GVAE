@@ -1,4 +1,6 @@
 from __future__ import division
+
+import numpy as np
 from linear_gae.initializations import weight_variable_glorot
 import tensorflow as tf
 
@@ -22,6 +24,9 @@ def get_layer_uid(layer_name = ''):
 
 def dropout_sparse(x, keep_prob, num_nonzero_elems):
     """Dropout for sparse tensors """
+    print(f" KEEP PROB {keep_prob}")
+    if keep_prob == 1 :
+        return x
     noise_shape = [num_nonzero_elems]
     random_tensor = keep_prob
     random_tensor += tf.random_uniform(noise_shape)
@@ -97,8 +102,7 @@ class GraphConvolutionSparse(Layer):
 
     def _call(self, inputs):
         x = inputs
-        x = dropout_sparse(x, 1 - self.dropout, self.features_nonzero)
-        print(f"adj: {self.adj.shape} x: {x.shape}  w: {self.vars['weights'].shape}")
+        #x = dropout_sparse(x, 1 - self.dropout, self.features_nonzero)
         x = tf.sparse_tensor_dense_matmul(x, self.vars['weights'])
         x = tf.sparse_tensor_dense_matmul(self.adj, x)
         outputs = self.act(x)

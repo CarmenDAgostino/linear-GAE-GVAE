@@ -1,0 +1,64 @@
+DATASET: IMDB-BINARY
+
+MODEL: gcn_ae
+Run for class 0
+AUC score: 0.43000000000000005
+F1 score: 0.09523809523809523
+Mean anomaly score: 0.0060852719549669265
+
+Run for class 1
+AUC score: 0.38
+F1 score: 0.5
+Mean anomaly score: 0.006862583644464678
+
+Mean AUC score:  0.405
+Mean F1 score:  0.2976190476190476
+Mean Anomale Detection score: 0.006473927799715
+
+
+MODEL: gcn_vae
+Run for class 0
+AUC score: 0.48
+F1 score: 0.48
+Mean anomaly score: 0.4002466630960004
+
+Run for class 1
+AUC score: 0.44
+F1 score: 0.582089552238806
+Mean anomaly score: 0.4410691521985865
+
+Mean AUC score:  0.45999999999999996
+Mean F1 score:  0.531044776119403
+Mean Anomaly Detection score:  0.42065790764729344 
+
+
+MODEL: linear_ae
+Run for class 0
+AUC score: 0.4600000000000001
+F1 score: 0.15625
+Mean anomaly score: 0.006241389057744354
+
+Run for class 1
+AUC score: 0.4600000000000001
+F1 score: 0.5909090909090909
+Mean anomaly score: 0.006068185711019768
+
+Mean AUC score:  0.4600000000000001
+Mean F1 score:  0,373575
+Mean Anomale Detection score: 0,001517
+
+
+MODEL: linear_vae
+Run for class 0
+AUC score: 0.48
+F1 score: 0.5438596491228069
+Mean anomaly score: 8.917495410198086
+
+Run for class 1
+AUC score: 0.45
+F1 score: 0.4954128440366973
+Mean anomaly score: 8.889677113933502
+
+Mean AUC score:  0.46499999999999997
+Mean F1 score:  0.5196362465797522
+Mean Anomaly Detection score:  8.903586262065794

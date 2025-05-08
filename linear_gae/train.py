@@ -123,6 +123,8 @@ adj_init, features_init = load_data(FLAGS.dataset)
 if FLAGS.task == 'node_clustering':
     labels = load_label(FLAGS.dataset)
 
+print(f"  FEATURES_INIT : {type(features_init)}")
+
 # The entire training+test process is repeated FLAGS.nb_run times
 for i in range(FLAGS.nb_run):
 
@@ -168,7 +170,9 @@ for i in range(FLAGS.nb_run):
     if not FLAGS.features:
         features = sp.identity(adj.shape[0])
     # Preprocessing on node features
+    print(f"  FEATURES : {type(features)}")
     features = sparse_to_tuple(features)
+    print(f"  FEATURES : {type(features)}")
     num_features = features[2][1]
     features_nonzero = features[1].shape[0]
 
@@ -272,6 +276,9 @@ for i in range(FLAGS.nb_run):
 
     # Get embedding from model
     emb = sess.run(model.z_mean, feed_dict = feed_dict)
+    print(f" max: {np.max(emb)}  min {np.min(emb)}")
+    rec = sess.run(model.reconstructions, feed_dict = feed_dict)
+    print(f" max: {np.max(rec)}  min {np.min(rec)}")
 
     # If k-core is used, only part of the nodes from the original
     # graph are embedded. The remaining ones are projected in the

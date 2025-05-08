@@ -1,7 +1,10 @@
 import subprocess
 import re
 import logging
+import tensorflow as tf 
+
 logging.getLogger('tensorflow').setLevel(logging.ERROR)
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 # codice che verifica il comportamento dei modelli per il task di anomaly detection
 
@@ -10,8 +13,8 @@ output_file = "results/ad_results"
 train_command = "python train_ad.py"
 
 # parametri
-models = ["linear_ae","gcn_ae","gcn_vae","linear_vae"]#,"gcn_vae","linear_ae","linear_vae"
-datasets = ["AIDS","ENZYMES","IMDB-BINARY"]#,"ENZYMES","IMDB-BINARY","REDDIT-MULTI-5K"
+models = ["linear_vae"]#"gcn_ae","gcn_vae","linear_ae","linear_vae"
+datasets = ["IMDB-BINARY"]#,"ENZYMES","IMDB-BINARY","REDDIT-MULTI-5K"
 
 
 # funzione per scrivere il risultato
@@ -31,7 +34,6 @@ def write_output(output) :
         re.DOTALL
     )
 
-    
     class_matches = class_pattern.findall(output)
     mean_match = mean_pattern.search(output)
 
@@ -54,11 +56,13 @@ def write_output(output) :
 for dataset in datasets:
     
     output_file_new = output_file + f"_{dataset}.txt"
-    file = open(output_file_new, "w")
+    file = open(output_file_new, "a")
 
     file.write(f"DATASET: {dataset}\n\n" )
 
+    file.close()
     for model in models:
+        file = open(output_file_new, "a")
         file.write(f"MODEL: {model}\n" )
         print(f"Training and testing model {model} on dataset {dataset} ...")
 
@@ -67,9 +71,11 @@ for dataset in datasets:
         output = subprocess.check_output(modified_command, shell=True) 
         output = output.decode()  
 
-        print(f"Model {model} trained and tested for dataset {dataset}. Result saved in {output_file_new}")
-
         write_output(output)
+        file.close()
+
+        print(f"Model {model} trained and tested for dataset {dataset}. Result saved in {output_file_new}")
+             
     file.close()
 
 print("Test on anomaly detection task completed.")
