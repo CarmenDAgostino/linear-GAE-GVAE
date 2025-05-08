@@ -1,50 +1,3 @@
-DATASET: AIDS
-
-MODEL: gcn_ae
-Run for class 0
-AUC score: 0.5F1 score: 0.33333333333333337Mean anomaly score: 0.010083786465224367
-
-Run for class 1
-AUC score: 0.065625F1 score: 0.010204081632653062Mean anomaly score: 0.011134158125635382
-
-Mean AUC score:  0.2828125
-Mean F1 score:  0.17176870748299322
-Mean Anomale Detection score: 0.010608972295429875
-Mean total running time:  12991.79337310791
-
-MODEL: gcn_vae
-Run for class 0
-AUC score: 0.5F1 score: 0.33333333333333337Mean anomaly score: 4.4567272273334915
-
-Run for class 1
-AUC score: 0.234375F1 score: 0.44000000000000006Mean anomaly score: 14.520592117103831
-
-Mean AUC score:  0.3671875
-Mean F1 score:  0.3866666666666667
-Mean Anomale Detection score: 9.488659672218661
-Mean total running time:  6917.419962644577
-
-MODEL: linear_ae
-Run for class 0
-AUC score: 0.5F1 score: 0.33333333333333337Mean anomaly score: 0.010805819911688537
-
-Run for class 1
-AUC score: 0.19999999999999998F1 score: 0.28571428571428575Mean anomaly score: 0.015318583710452643
-
-Mean AUC score:  0.35
-Mean F1 score:  0.30952380952380953
-Mean Anomale Detection score: 0.01306220181107059
-Mean total running time:  6282.464913606644
-
-MODEL: linear_vae
-Run for class 0
-AUC score: 0.48125000000000007F1 score: 0.12121212121212123Mean anomaly score: 4.516568461064993
-
-Run for class 1
-AUC score: 0.35F1 score: 0.549618320610687Mean anomaly score: 14.494804804098145
-
-Mean AUC score:  0.415625
-Mean F1 score:  0.33541522091140413
-Mean Anomale Detection score: 9.505686632581568
-Mean total running time:  13487.348398447037
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ef4972c28cd3aac8ccd70804c6c58ceb17df1a69a260a22bfc0a0f3d06382de5
+size 1609

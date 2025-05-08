@@ -1,17 +1,3 @@
-README.md
-setup.py
-linear_gae/__init__.py
-linear_gae/evaluation.py
-linear_gae/initializations.py
-linear_gae/input_data.py
-linear_gae/kcore.py
-linear_gae/layers.py
-linear_gae/model.py
-linear_gae/optimizer.py
-linear_gae/preprocessing.py
-linear_gae/train.py
-linear_gae.egg-info/PKG-INFO
-linear_gae.egg-info/SOURCES.txt
-linear_gae.egg-info/dependency_links.txt
-linear_gae.egg-info/requires.txt
-linear_gae.egg-info/top_level.txt
+version https://git-lfs.github.com/spec/v1
+oid sha256:a4171333b4b9f83302c7b75e3744034c6079891a8afb9d996089cf9b1e705568
+size 423
